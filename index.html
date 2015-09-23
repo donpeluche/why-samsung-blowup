@@ -1,0 +1,82 @@
+<!doctype html>
+<!--[if IE 7 ]><html class="ie7" lang="es"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="es"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="es"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>BLOW UP</title>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/estilos.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/scripts.js"></script>
+
+</head>
+<body>
+	<div id="contenedor">
+        <section id="paso1" style="display:block;">
+        	<div class="flexslider">
+            	<ul class="slides">            
+                    <li id="home">
+                        <h1 class="logo">BLOW UP BEAUTY DRY BAR</h1>
+                        <a href="javascript:void(0);" id="comenzar" class="comenzar">Comenzar</a>
+                    </li>
+                    <li id="iniciar">
+                    	<p class="logo">BLOW UP BEAUTY DRY BAR</p>
+                        <h2>Esta App esta pensada para que disfrutes más aun de tu nuevo look.</h2>
+                        <p>Acá podrás interactuar con el, viendo tu “antes y después”.</p>
+                        <a href="javascript:void(0);" id="tomar-foto">TOMAR FOTO</a>
+                    </li>
+           		</ul>
+            </div>	
+            <p class="version">Versión <span>Demo</span></p>
+            <p class="reinventab">REINVENTAB</p>
+            <p class="firma">powered by SAMSUNG Galaxy Tab S2</p>
+        </section>
+        <section id="paso2" class="foto">
+        	<div class="top cf">
+            	<a href="javascript:void(0);" class="volver">volver</a>
+                <p class="logo">BLOW UP BEAUTY DRY BAR</p>
+            </div>
+            <div class="camara">
+                <span id="icono"></span>
+                <div class="mensaje"><p><span>Tomar</span> segunda foto</p></div>
+            	<span class="guia"></span>
+                <div id="mascara1">
+                    <canvas id="resultado1" width="574" height="765"></canvas>
+                </div>
+                <div id="mascara2">
+                    <canvas id="resultado2" width="574" height="765"></canvas>
+                </div>
+                <video id="video" width="574" height="765" autoplay></video> 
+                <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">  
+            </div>
+            
+            <script>
+                var divisor = document.getElementById("mascara1"),
+                slider = document.getElementById("slider");
+                function moveDivisor() { 
+                    divisor.style.width = slider.value+"%";
+                }
+            </script>  
+            <div class="botones cf">
+            	<a href="javascript:void(0);" class="repetir">repetir</a>
+                <a href="javascript:void(0);" class="repetir2">repetir</a>
+                <a href="javascript:void(0);" id="capturar1" class="capturar">tomar foto</a>
+                <a href="javascript:void(0);" id="capturar2" class="capturar">tomar foto</a>
+                <a href="javascript:void(0);" class="ok">ok</a>
+                <a href="javascript:void(0);" class="ok2">ok</a>
+                <a href="javascript:void(0);" class="ok3">ok</a>
+                <a href="javascript:void(0);" id="crear" class="crear">Crear otro look</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,474 @@
+@charset "utf-8";
+/* CSS Document */
+/* RESET */
+@import url('reset.css');
+/* font-face*/
+@font-face {
+    font-family: 'SamsungSharpSans-Regular';
+    src: url('../fonts/SamsungSharpSans-Regular.eot');
+    src: url('../fonts/SamsungSharpSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SamsungSharpSans-Regular.woff') format('woff'),
+         url('../fonts/SamsungSharpSans-Regular.ttf') format('truetype'),
+         url('../fonts/SamsungSharpSans-Regular.svg#SamsungSharpSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SamsungSharpSans-Bold';
+    src: url('../fonts/SamsungSharpSans-Bold.eot');
+    src: url('../fonts/SamsungSharpSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SamsungSharpSans-Bold.woff') format('woff'),
+         url('../fonts/SamsungSharpSans-Bold.ttf') format('truetype'),
+         url('../fonts/SamsungSharpSans-Bold.svg#SamsungSharpSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ESTILOS GENERALES */
+html,
+body,
+#contenedor {
+	height:100%;
+	overflow:hidden;
+	}
+body {
+	font-family: 'SamsungSharpSans-Regular';
+	color:#ffffff;
+	}
+#contenedor > section {
+	display:none;
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	} 
+/* HOME */
+#paso1 {
+	background:url(../images/bg-intro.jpg) no-repeat 0 0;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	transition:background 0.2s linear;
+	-webkit-transition:background 0.2s linear;
+	-moz-transition:background 0.2s linear;
+	}
+#paso1.cambiofondo {
+	background:url(../images/bg-iniciar.jpg) no-repeat 0 0;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+}
+#paso1 .reinventab,
+#paso1 .firma {
+	display:block;
+	text-indent:-9999px;
+	position:absolute;
+	z-index:2;
+	-webkit-animation-name: fadeIn;
+  	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	}
+#paso1 .version {
+	display:block;
+	font-size:17px;
+	position:absolute;
+	z-index:2;
+	top:30px;
+	left:30px;
+	-webkit-animation-delay: 0.2s; 
+    animation-delay: 0.2s;
+	-webkit-animation-name: fadeIn;
+  	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	}
+#paso1 .version span {
+	font-family: 'SamsungSharpSans-Bold';
+	}
+#paso1 .reinventab {
+	width:186px;
+	height:18px;
+	background:url(../images/reinventab.png) no-repeat 0 0;
+	bottom:30px;
+	left:30px;
+	-webkit-animation-delay: 0.5s; 
+    animation-delay: 0.5s;
+	}
+#paso1 .firma {
+	display:block;
+	width:217px;
+	height:26px;
+	background:url(../images/firma-samsung.png) no-repeat 0 0;
+	bottom:30px;
+	right:30px;
+	-webkit-animation-delay: 0.8s; 
+    animation-delay: 0.8s;
+	}
+.flex-viewport,
+.slides,
+.slides li {
+	height:100%;
+}
+#paso1 .controls {
+	position:absolute;
+	bottom:145px;
+	left:50%;
+	margin-left: -44px;
+	z-index:2;
+	-webkit-animation-delay: 1.5s; 
+    animation-delay: 1.5s; 
+	-webkit-animation-name: fadeIn;
+  	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	}
+#paso1 .controls li {
+	float:left;
+	margin:0 12px;
+	}
+#paso1 .controls li a {
+	display:block;
+	width:18px;
+	height:18px;
+	border:1px solid #ffffff;
+	text-indent:-9999px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	}
+#paso1 .controls li.flex-active a {
+	background-color:#ffffff;
+	}
+#home {
+	height:100%;
+	position:relative;
+}
+#home .logo {
+	display:block;
+	width:376px;
+	height:262px;
+	background:url(../images/logo-1.png) no-repeat 0 0;
+	text-indent:-9999px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-131px;
+	margin-left:-188px;
+	z-index:2;
+	-webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+	-webkit-animation-name: fadeIn;
+  	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	}
+#iniciar {
+	height:100%;
+	position:relative;
+	text-align:center;
+}
+#iniciar .logo {
+	display:block;
+	width:324px;
+	height:225px;
+	background:url(../images/logo-2.png) no-repeat 0 0;
+	text-indent:-9999px;
+	margin:140px auto 80px auto;
+}
+#iniciar h2 {
+    width: 440px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-family: 'SamsungSharpSans-Bold';
+    text-transform: uppercase;
+}
+#iniciar p {
+	font-size: 17px;
+	margin-bottom:90px;
+}
+#iniciar a,
+#paso2 .crear,
+#paso1 .comenzar {
+    display: block;
+    width: 375px;
+    height: 75px;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+    line-height: 78px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'SamsungSharpSans-Bold';
+    font-size: 22px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+}
+#paso1 .comenzar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 190px;
+    margin-left: -187px;
+    text-align: center;
+	z-index:2;
+	-webkit-animation-delay: 1.5s; 
+    animation-delay: 1.5s; 
+	-webkit-animation-name: fadeIn;
+  	animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+  	animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	}
+/* PASO FOTOS GENERALES */
+.foto {
+	background:url(../images/bg-foto.jpg) no-repeat 0 0;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+}
+.foto .top {
+	padding:40px;
+}
+.foto .volver {
+	display:block;
+	width:86px;
+	height:86px;
+	text-indent:-9999px;
+	background:url(../images/icono_home.png) no-repeat 0 0;
+	float:left;
+}
+.foto .logo {
+	display:block;
+	width:104px;
+	height:71px;
+	background:url(../images/logo-3.png) no-repeat 0 0;
+	text-indent:-9999px;
+	float:right;
+}
+.foto .camara {
+	border: 1px solid #ccc;
+    width: 574px;
+    height: 576px;
+	position:relative;
+    margin:0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+}
+.foto .camara img {
+	display:block;
+	height:625px;
+	width:auto;
+}
+.foto .botones {
+	width:540px;
+	height:80px;
+	margin:40px auto 0 auto;
+	position:relative;
+}
+.foto .botones a {
+	display:block;
+	text-indent:-9999px;
+}
+.foto .botones .ok, 
+.foto .botones .ok2,
+.foto .botones .ok3{
+	float:right;
+	width:69px;
+	height:48px;
+	background:url(../images/btn-ok.png) no-repeat 0 0;
+}
+.ok2 {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+}
+.foto .botones .capturar {
+	width:147px;
+	height:77px;
+	background:url(../images/btn-camara.png) no-repeat 0 0;
+	position:absolute;
+	left:50%;
+	margin-left:-73px;
+}
+.foto .botones .repetir,
+.foto .botones .repetir2 {
+	float:left;
+	width:62px;
+	height:53px;
+	background:url(../images/btn-repeat.png) no-repeat 0 0;
+}
+/* PASO 2*/
+#paso2 .camara .guia {
+	display:block;
+	height:589px;
+	width:684px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-295px;
+	margin-left:-342px;
+	background:url(../images/guias.png) no-repeat;
+	z-index:1000;
+}
+#paso2 .mensaje {
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    display:none;
+}
+#paso2 .mensaje p {
+	color:#000000;
+    font-size: 25px;
+	margin:268px 0 0 6px;
+}
+#paso2 .mensaje p span {
+    padding: 10px 0 5px 0;
+    font-size: 25px;
+    font-family: 'SamsungSharpSans-Bold';
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+/* PASO 5*/
+#mascara1{
+	border-right: 1px solid #ccc;
+}
+#paso2 .crear {
+	text-align:center;
+	text-indent:0;
+}
+#comparacion { 
+  width: 768px;
+  height: 625px;
+  max-height: 625px;
+  overflow: hidden;
+  margin:0 auto;
+}
+#comparacion figure { 
+  background-image: url(../images/foto-2.jpg); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+}
+#comparacion figure > img { 
+  position: relative;
+  width: 100%;
+}
+#comparacion figure div { 
+  background-image: url(../images/foto-1.jpg);
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
+#icono {
+	display:block;
+	width:129px;
+	height:153px;
+	background:url(../images/ico_mano.png) no-repeat 0 0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-76px;
+	margin-left:-64px;
+	z-index:3;
+	}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 590px; /* Specific width is required for Firefox. */
+  height: 100%;
+  background: none;
+  position: absolute;
+  top:0px;
+  margin-left:-8px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 45px;
+  width: 60px;
+  border-radius: 3px;
+  background-color:rgba(255, 255, 255, 0);
+  cursor: pointer;
+  margin-top: -14px;
+}
+
+// All the same stuff for Firefox 
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+// All the same stuff for IE 
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
